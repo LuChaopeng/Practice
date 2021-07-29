@@ -1,0 +1,16 @@
+*,::before,::after{
+    box-sizing:border-box;
+}
+h2{
+    display: inline-block;
+}
+.impList{
+    margin:0 2em;
+}
+.oriList{
+    margin:0;
+}
+.impItem{
+    display: inline-block;
+    width:10rem;
+}
