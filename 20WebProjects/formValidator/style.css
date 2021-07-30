@@ -1,5 +1,5 @@
 :root{
-    --succusee-color:#2ecc71;
+    --success-color:#2ecc71;
     --error-color:#e74c3c;
 }
 *,::before,::after{
@@ -41,21 +41,33 @@ input{
     border-radius: 5px;
 }
 
-input:valid{
-    border-color: var(--succusee-color);
-    color:var(--succusee-color);
+/*input:valid{
+    border-color: var(--success-color);
+    color:var(--success-color);
 }
 input:invalid{
     border-color: var(--error-color);
-}
+}*/
 
 .submit{
     color: white;
     background-color: rgb(52,152,219);
     cursor:pointer;
 }
-.error{
+.error-text{
+    visibility: visible;
     position:absolute;
     left:0;
     bottom:0;
+    color:var(--error-color);
+}
+.success-text{
+    visibility: hidden;
+}
+
+.error-input{
+    border-color: #e74c3c;
+}
+.success-input{
+    border-color: #2ecc71;
 }

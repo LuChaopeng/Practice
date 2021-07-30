@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Form Validator</title>
+    <link rel="icon" href="https://baidu.com">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,25 +13,26 @@
             <div class="item">
                 <label for="username">Username</label>
                 <input type="text" placeholder="Enter username" id="username">
-                <small class="error">Username is not valid</small>
+                <small class="error-text">Username is not valid</small>
             </div>
             <div class="item">
                 <label for="email">Email</label>
                 <input type="email" placeholder="Enter email" id="email">
-                <small class="error">Email is not valid</small>
+                <small class="error-text">Email is not valid</small>
             </div>
             <div class="item">
                 <label for="psw">Password</label>
                 <input type="password" placeholder="Enter password" id="psw">
-                <small class="error">Password is not valid</small>
+                <small class="error-text">Password is not valid</small>
             </div>
             <div class="item">
                 <label for="confirm">Confirm Password</label>
                 <input type="password" placeholder="Enter password again" id="confirm">
-                <small class="error">Do not match</small>
+                <small class="error-text">Do not match</small>
             </div>
             <label><input class="submit" type="submit" value="Submit"></label>
         </form>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
