@@ -41,28 +41,20 @@ input{
     border-radius: 5px;
 }
 
-/*input:valid{
-    border-color: var(--success-color);
-    color:var(--success-color);
-}
-input:invalid{
-    border-color: var(--error-color);
-}*/
-
 .submit{
     color: white;
     background-color: rgb(52,152,219);
     cursor:pointer;
 }
 .error-text{
-    visibility: visible;
-    position:absolute;
+    position:absolute;  //设置定位以使文本的position:absolute可用
     left:0;
     bottom:0;
     color:var(--error-color);
 }
 .success-text{
     visibility: hidden;
+    position:absolute;  //脱离文档流，使得visibility取不同值的时候父级元素表现一致
 }
 
 .error-input{
