@@ -1,0 +1,110 @@
+*,::after,::before{
+    box-sizing:border-box;
+}
+:root{
+    --body-BGC:rgb(36,35,51);
+    --mark-BGC:rgb(32,31,46);
+    --mark-fontcolor:rgb(119,119,119);
+    --NA-color:rgb(68,68,81);
+    --sel-color:rgb(111,234,246);
+    --occu-color:rgb(255,255,255);
+}
+/*总体部分的CSS*/
+body{
+    background-color: var(--body-BGC);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main>*{
+    margin-bottom: 2em;
+}
+/*选择电影的CSS*/
+.movie{
+    color:white;
+}
+#pick-movie{
+    appearance: none; /*清除默认样式*/
+    font-size: 1.1rem;
+    width: 10em;
+    border-radius: 5px;
+    padding: 0.2em 0.5em;
+
+}
+
+/*座位标记*/
+.mark{
+    width:18em;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--mark-BGC);
+    color: var(--mark-fontcolor);
+    padding: 0.4em 0;
+    border-radius: 5px;
+}
+.mark-item .seat{
+    display: inline-block;
+}
+.mark-item{
+    display: flex;
+    align-items: center;
+}/*这个是为了让文字居中，找不到别的办法了*/
+.seat{
+    background-color: var(--NA-color);
+    margin:0.3em;
+    width: 1em;
+    height: 1em;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.na-seat{
+    background-color:var(--NA-color);
+}
+.sel-seat{
+    background-color:var(--sel-color);
+}
+.occu-seat{
+    background-color:var(--occu-color);
+}
+
+/*大荧幕的样式
+重点在于梯形和阴影
+通过设置超粗border是个方法，但总有些奇淫巧技，而且没法设置需求的阴影
+*/
+.screen{
+    background-color: white;
+    box-shadow:0 5px 3px white;
+    width:12em;
+    height:3em;
+    transform: perspective(5em) rotateX(-4deg);
+}
+
+/*座位分布图样式*/
+.seats{
+    display: flex;
+    flex-direction: column;
+}
+.seats .seat:hover{
+
+}
+.seats .seat
+.row{
+    display: flex;
+}
+.row :nth-child(2),.row :nth-child(6){
+    margin-right: 1em;
+}
+
+/*  计价部分*/
+.price{
+    color:white;
+}
+.dyn{
+    color:rgb(111,234,246);
+}
