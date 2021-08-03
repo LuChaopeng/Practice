@@ -9,12 +9,15 @@
     <main>
         <div class="movie">
             Pick a movie：
-            <select name="movie" id="pick-movie">
-                <option value="avengers">Avengers($10)</option>
-                <option value="joker">Joker($12)</option>
-                <option value="toy-story" selected>Toy Story($8)</option>
-                <option value="the-lion-king">The Lion King($9)</option>
-            </select>
+            <!--随时注意表单加<label>标签-->
+            <label for="pick-movie">
+                <select name="movie" id="pick-movie">
+                    <option value="avengers">Avengers($10)</option>
+                    <option value="joker">Joker($12)</option>
+                    <option value="toy-story" selected>Toy Story($8)</option>
+                    <option value="the-lion-king">The Lion King($9)</option>
+                </select>
+            </label>
         </div>
         <div class="mark">
             <div class="mark-item">
@@ -91,7 +94,7 @@
             </div>
         </div>
         <div class="price">
-            You have selected <span class="dyn" id="amount"></span> seats for a price of $<span class="dyn" id="total-price"></span>
+            You have selected <span class="dyn" id="count">0</span> seats for a price of $<span class="dyn" id="total-price">0</span>
         </div>
     </main>
 <script src="script.js"></script>

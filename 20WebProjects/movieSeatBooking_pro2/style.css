@@ -90,10 +90,17 @@ main>*{
     display: flex;
     flex-direction: column;
 }
+/*
+transform:scale()自带动画
+.seats .seat{ !*指定hover过渡的属性和时长，元素属性任何时候发生变化都会触发过渡*!
+    transition-property:all ;
+    transition-duration:0.3s;
+}*/
 .seats .seat:hover{
-
+    cursor:pointer;
+    transform:scale(1.2);
 }
-.seats .seat
+
 .row{
     display: flex;
 }
