@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exchange Rate Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <img src="money.png" alt="钱">
+        <h2>Exchange Rate Calculator</h2>
+        <p>Choose the currency and the amounts to get the exchange rate</p>
+        <div class="origin ex-item">
+            <label for="choose-origin">
+                <select id="choose-origin">
+                    <option value="USD" selected>USD</option>
+                    <option value="CNY">CNY</option>
+                    <option value="HKD">HKD</option>
+                    <option value="AUD">AUD</option>
+                </select>
+            </label>
+                <label for="input-amount">
+                    <input type="number" value="1" id="input-amount" min="0">
+                </label>
+        </div>
+        <div class="swap ex-item">
+            <label for="swapbtn"><input type="button" id="swapbtn" value="Swap"></label>
+            <p id="rate"></p>
+        </div>
+        <div class="after ex-item">
+            <label for="choose-after">
+                <select id="choose-after">
+                    <option value="USD">USD</option>
+                    <option value="CNY" selected>CNY</option>
+                    <option value="HKD">HKD</option>
+                    <option value="AUD">AUD</option>
+                </select>
+            </label>
+            <label for="output-amount">
+                <input type="number" step="0.01" id="output-amount">
+            </label>
+        </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
