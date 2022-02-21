@@ -1,2 +1,7 @@
-# JavaScript
-2021.7学习JavaScript
+# Practice
+一些练习，包括
+
+- 前端的练习小项目；
+- leetcode上的基础题目；
+- 熟悉一些语言特性和语法；
+- ……
